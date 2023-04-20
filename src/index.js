@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Logo } from './componante/logo/logo';
+import { Benifits } from './componante/Benifits/Benifits';
+import { Button } from './componante/Button/Button';
+
+ 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <Logo />
+    <Benifits />
+    <Button />
+    
+   
   </React.StrictMode>
 );
 
