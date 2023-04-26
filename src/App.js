@@ -1,6 +1,10 @@
 // import logo from './logo.svg';
 // import './App.css';
-import Card from "./Component/Card/Card";
+
+// import card from "./Componante/Card/Card";
+import Card from "./Componante/Card/Card"
+
+
 
 
 
@@ -12,8 +16,8 @@ function App() {
     //   <header className="App-header">
       <div>
       <header>
-        <Card />
-        
+       
+      <Card />
     
       
       </header>
