@@ -1,8 +1,8 @@
 
 import './App.css';
-import NameUpdater from "./Componante/Counter_App/Name_updater/NameUpdater";
+// import NameUpdater from "./Componante/Counter_App/Name_updater/NameUpdater";
 
-
+import Gammer from './Componante/Gammer/Gammer';
 
 
 function App() {
@@ -10,7 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
      
-     <NameUpdater />
+     {/* <NameUpdater /> */}
+     <Gammer />
       
       </header>
     </div>
