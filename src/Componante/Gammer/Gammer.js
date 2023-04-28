@@ -4,7 +4,7 @@ export default function Gammer() {
   let randNum = Math.round(Math.random() * 10);
 
   const [number, setNumber] = useState("")
-  const [userCount, setuserCount] = useState(0)
+  const [userCount, setuserCount] = useState(1)
   const [userGuessNumber, setuserGuessNumber] = useState([]);
   const [randomnumber, setrandomnumber] = useState(randNum)
   const [msg, setMsg] = useState(" ")
@@ -17,23 +17,29 @@ export default function Gammer() {
   const checknumber = () => {
 
     if (randomnumber == number) {
-      setMsg("Congratulations!!!! you are win")
+      alert("congratulations you guessed the right number in attempts")
+      setMsg(<p>congratulations you guessed the right number in  {userCount} attempts</p>)
+
       setdisbaled(true)
 
     } else if (randomnumber < number) {
+      alert("you guessed a bigger number")
       setMsg("Select value is HIGH ")
 
     }
     else if (randomnumber > number) {
+      alert(" you guessed a smaller number")
       setMsg("Select value is LOW ")
 
     }
     else if (userCount == 4) {
+      alert("GAME OVER")
       setMsg("GAME OVER")
       setdisbaled(true)
 
     } else {
-      setMsg("wrong msg")
+      alert("WRONG NUMBER")
+      setMsg("wrong number")
     }
     setuserCount(userCount + 1)
     setuserGuessNumber([...userGuessNumber, number])
@@ -70,9 +76,9 @@ export default function Gammer() {
 
       <div>
         <p>Total round by user : {userCount}</p>
-        {/* <p>Random number : {randomnumber}</p> */}
-        <p>msg: {msg}</p>
-        <p>User Guess :
+        <p>Random number : {randomnumber}</p>
+        <p className='p1'>msg:-{msg}</p>
+        <p >User Guess Number:
           {userGuessNumber?.map((item, index) => {
             return <span key={index} > {item}, </span>
           })}
