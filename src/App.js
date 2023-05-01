@@ -2,7 +2,9 @@
 import './App.css';
 // import NameUpdater from "./Componante/Counter_App/Name_updater/NameUpdater";
 
-import Gammer from './Componante/Gammer/Gammer';
+// import Gammer from './Componante/Gammer/Gammer';
+// import List from './Componante/list_key/list';
+import Evant from './Componante/EventHabdling/Evant';
 
 
 function App() {
@@ -11,8 +13,9 @@ function App() {
       <header className="App-header">
      
      {/* <NameUpdater /> */}
-     <Gammer />
-      
+     {/* <Gammer /> */}
+      {/* <List /> */}
+      <Evant />
       </header>
     </div>
   );

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Gammer.css'
 export default function Gammer() {
-  let randNum = Math.round(Math.random() * 10);
+  let randNum = Math.round(Math.random() * 100);
 
-  const [number, setNumber] = useState("")
+  const [number, setNumber] = useState(" ")
   const [userCount, setuserCount] = useState(1)
   const [userGuessNumber, setuserGuessNumber] = useState([]);
   const [randomnumber, setrandomnumber] = useState(randNum)
@@ -17,7 +17,7 @@ export default function Gammer() {
   const checknumber = () => {
 
     if (randomnumber == number) {
-      alert("congratulations you guessed the right number in attempts")
+      alert(`congratulations you guessed the right number in ${userCount} attempts`)
       setMsg(<p>congratulations you guessed the right number in  {userCount} attempts</p>)
 
       setdisbaled(true)
@@ -32,12 +32,13 @@ export default function Gammer() {
       setMsg("Select value is LOW ")
 
     }
-    else if (userCount == 4) {
-      alert("GAME OVER")
+    else if(userCount === 4) {
+      // alert("GAME OVER")
       setMsg("GAME OVER")
       setdisbaled(true)
 
-    } else {
+    }
+     else {
       alert("WRONG NUMBER")
       setMsg("wrong number")
     }
@@ -49,7 +50,7 @@ export default function Gammer() {
     setMsg(" ")
     setuserGuessNumber([])
     setuserCount(0)
-    setrandomnumber(Math.round(Math.random() * 10))
+    setrandomnumber(Math.round(Math.random() * 100))
     setuserGuessNumber()
 
   }
@@ -57,7 +58,7 @@ export default function Gammer() {
   return (
     <div>
       <h2>Enter your Guess Lucky number</h2>
-      <p>Guess a number between 1 to 10</p>
+      <p>Guess a number between 1 to 100</p>
       <p>You Have 5 round</p>
 
       <input
