@@ -10,10 +10,18 @@ const UseRef = () => {
     <input  
     type='file'
     ref={inputRef}
+    style={{ display: 'none' }}
 
 
     />
-    <button onClick={PickFile}>Pick the File</button>
+    <button onClick={PickFile} style={{
+        backgroundColor: "#1e293b",
+        color: "white",
+        margin : 20,
+        padding: 20,
+        borderRadius: 8,
+        cursor: "pointer",
+        overflow: "hidden"}}>Pick the File</button>
       
     </div>
   )
