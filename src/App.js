@@ -1,7 +1,7 @@
 
 import './App.css';
-// import UseEffect from './Componante/UseEffect/UseEffect';
-import UseRef from './Componante/UseEffect/UseRef';
+import UseEffect from './Componante/UseEffect/UseEffect';
+// import UseRef from './Componante/UseEffect/UseRef';
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
      <header className="App-header">
    
     
-     {/* <UseEffect /> */}
-     <UseRef />
+     <UseEffect />
+     {/* <UseRef /> */}
     
       </header>
     </div>
