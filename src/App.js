@@ -1,7 +1,7 @@
 
 import './App.css';
-import UseEffect from './Componante/UseEffect/UseEffect';
-// import UseRef from './Componante/UseRef/UseRef';
+import Asyawait from './Componante/UseEffect/async&await/async&await';
+
 
 
 function App() {
@@ -9,10 +9,7 @@ function App() {
     <div className="App">
      <header className="App-header">
    
-    
-     <UseEffect />
-     {/* <UseRef /> */}
-    
+    <Asyawait />
       </header>
     </div>
   );
