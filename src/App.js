@@ -1,18 +1,14 @@
 
 import './App.css';
-// import Asyawait from './Componante/UseEffect/async&await/async&await';
-import CardApi from './Componante/CardAPI/CardApi';
 
+import Mobile from './Componante/MobileGenerateOtp/Mobile';
 
 
 function App() {
   return (
     <div className="App">
      <header className="App-header">
-    {/* // <div>
-    // <header> */}
-   <CardApi />
-    {/* <Asyawait /> */}
+    <Mobile />
       </header>
     </div>
   );
