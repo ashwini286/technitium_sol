@@ -1,14 +1,16 @@
 
 import './App.css';
 
-import Mobile from './Componante/MobileGenerateOtp/Mobile';
+// import Mobile from './Componante/MobileGenerateOtp/Mobile';
+import AsyncAwaitOtp from './Componante/AsyncAwaitOtpGenerater/AsyncAwaitOtpGenerater'
 
 
 function App() {
   return (
     <div className="App">
      <header className="App-header">
-    <Mobile />
+    {/* <Mobile /> */}
+    <AsyncAwaitOtp />
       </header>
     </div>
   );
