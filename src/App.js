@@ -1,13 +1,12 @@
 
 import './App.css';
-
-import ChangeImageUsingAxios from './Componante/ChangeImageUsingAxios/ChangeImageUsingAxios'
+import OtpGeneratorAxior from './Componante/AsyncAwaitOtpGenerater/OtpGeneratorAxior';
 
 function App() {
   return (
     <div className="App">
      <header className="App-header">
-    <ChangeImageUsingAxios />
+   <OtpGeneratorAxior />
      </header>
     </div>
   );
